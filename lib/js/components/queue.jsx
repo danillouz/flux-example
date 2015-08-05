@@ -68,7 +68,11 @@ module.exports = React.createClass({
 
 		return (
 			<section id="queue-container">
-				{ this.state.isLoading ? <span>loading queue data..</span> : null }
+				{
+					this.state.isLoading ?
+						<span className="loader"><i className="fa fa-cog fa-spin fa-5x"></i></span> : 
+						null
+				}
 
 				<ul className="queue-data">
 					{
