@@ -1,6 +1,6 @@
 # flux-example
 Example application demonstrating (server) action creators for the crowdynews
-[react-flux presentation](http://slides.com/danillouz/deck#/).
+[react-flux presentation](http://slides.com/danillouz/react-flux#/).
 
 ### installing dependencies
 ```
