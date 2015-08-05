@@ -1,5 +1,7 @@
 /**
  * @module fav-counter-component
+ *
+ * Controller View.
  */
 
 var React = require('react');

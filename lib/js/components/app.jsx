@@ -1,5 +1,7 @@
 /**
  * @module app-component
+ *
+ * View.
  */
 
 var React = require('react');

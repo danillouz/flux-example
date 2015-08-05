@@ -1,5 +1,7 @@
 /**
  * @module queue-item
+ *
+ * View.
  */
 
 var React = require('react');

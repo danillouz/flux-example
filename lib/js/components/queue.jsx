@@ -1,5 +1,7 @@
 /**
  * @module queue-component
+ *
+ * Controller View.
  */
 
 var React = require('react');
@@ -70,7 +72,7 @@ module.exports = React.createClass({
 			<section id="queue-container">
 				{
 					this.state.isLoading ?
-						<span className="loader"><i className="fa fa-cog fa-spin fa-5x"></i></span> : 
+						<span className="loader"><i className="fa fa-cog fa-spin fa-5x"></i></span> :
 						null
 				}
 
