@@ -33,9 +33,9 @@ module.exports = React.createClass({
 			<li className={ 'queue-data-item' + (this.props.favorited ? ' favorited' : '') }>
 				{ this.props.name }
 
-				<span className="fav-button" onClick={ this.handleFavorite } value={ this.props.id }>
-					<i className={ 'fa' + (this.props.favorited ? ' fa-star' : ' fa-star-o') } />
-				</span>
+				<button className="fav-button" onClick={ this.handleFavorite } value={ this.props.id }>
+					<i className={ 'fa' + (this.props.favorited ? ' fa-star' : ' fa-star-o') + ' fa-3x' } />
+				</button>
 			</li>
 		);
 	}
