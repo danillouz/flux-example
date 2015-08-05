@@ -1,0 +1,54 @@
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+	background-color: #042029;
+	color: #FCF4DC
+}
+
+#application-container {
+	position:absolute;
+}
+
+#fav-counter {
+	font-size: 3em;
+	float: right;
+	margin: 2.6em 0em;
+}
+
+#queue-container {
+	text-transform: lowercase;
+	float: left;
+	margin: 3em 4.5em;
+}
+
+.queue-data-item {
+	list-style: none;
+	padding: 0.25em;
+	text-align: right;
+}
+
+.counter {
+	color: #66D9EF;
+}
+
+.fav-button {
+	padding: 1em;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #EBC807;
+}
+
+.fav-button:hover {
+	cursor: pointer;
+}
+
+.favorited {
+	color: #66D9EF;
+}
+
+.loader {
+	display: block;
+	margin: 4.2em 1.52em;
+}
