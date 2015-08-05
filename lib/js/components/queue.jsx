@@ -15,8 +15,9 @@ var QueueItem = require('./queue-item');
  */
 var __getState = function () {
 	return {
-		queueData: QueueStore.getQueueData(),
-		isLoading: QueueStore.isLoading()
+		isLoading: QueueStore.isLoading(),
+		queueData: QueueStore.getData(),
+		favoritedItems: QueueStore.getFavoritedItems()
 	};
 };
 
@@ -63,16 +64,28 @@ module.exports = React.createClass({
 	 * @return {Object} virtual DOM element
 	 */
 	render: function () {
+		console.log(this.state);
+
 		return (
-			<div className="queue-container">
+			<section id="queue-container">
 				{ this.state.isLoading ? <span>loading queue data..</span> : null }
 
 				<ul className="queue-data">
 					{
-						this.state.queueData.map(queueItem => <QueueItem key={ 'something' + queueItem.id} { ...queueItem } />)
+						this.state.queueData.map(queueItem => {
+							var isFavorited = !!~this.state.favoritedItems.indexOf(queueItem.id);
+
+							return (
+								<QueueItem
+									key={ queueItem.id }
+									favorited={ isFavorited }
+									{ ...queueItem }
+								/>
+							);
+						})
 					}
 				</ul>
-			</div>
+			</section>
 		);
 	}
 });
