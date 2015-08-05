@@ -62,9 +62,9 @@ module.exports = React.createClass({
 	 */
 	render: function () {
 		return (
-			<div className="fav-counter">
-				{ this.state.favoritedItems.length } items favorited
-			</div>
+			<section id="fav-counter">
+				<span className="counter">{ this.state.favoritedItems.length }</span> favorited
+			</section>
 		);
 	}
 });
