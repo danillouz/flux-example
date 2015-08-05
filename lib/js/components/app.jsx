@@ -4,6 +4,7 @@
 
 var React = require('react');
 var QueueAction = require('../actions/queue');
+var FavCounter = require('./fav-counter');
 var Queue = require('./queue');
 
 // Component
@@ -24,6 +25,12 @@ module.exports = React.createClass({
 	 * @return {Object} virtual DOM element
 	 */
 	render: function () {
-		return <Queue />;
+		return (
+			<section id="application-container">
+				<FavCounter />
+
+				<Queue />
+			</section>
+		);
 	}
 });
